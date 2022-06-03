@@ -1,0 +1,77 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: white;
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+}
+
+.container {
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.content, .content-thankyou {
+    width: 350px;
+    background-color: var(--dark-blue);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.icon {
+    background-color: rgb(46, 53, 63);
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 25px 0 10px 0;
+}
+
+.rating-icons {
+    padding: 25px 0;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    text-transform:uppercase
+}
+
+.thankyou-page {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-thankyou {
+    text-align: center;
+}
+
+/*
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*/
