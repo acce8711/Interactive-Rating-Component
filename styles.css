@@ -11,6 +11,7 @@
     --white: white;
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --card-color: #1f2630;
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
     --orange: hsl(25, 97%, 53%);
@@ -23,20 +24,20 @@ body {
 
 .container {
     height: inherit;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content, .content-thankyou {
-    width: 350px;
-    background-color: var(--dark-blue);
+    width: 360px;
+    background-color: var(--card-color);
     padding: 30px;
     border-radius: 30px;
 }
 
 .icon {
-    background-color: rgb(46, 53, 63);
+    background-color: var(--dark-blue);
     width: 45px;
     height: 45px;
     border-radius: 30px;
@@ -47,28 +48,94 @@ body {
 
 h1 {
     margin: 25px 0 10px 0;
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+    color: var(--light-grey);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+button {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .rating-icons {
     padding: 25px 0;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    border: none;
+    width: 45px;
+    height: 45px;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    border-radius: 50%;
+}
+
+.rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.25s;
+}
+
+.rating-selected {
+    background-color: var(--medium-grey);
+    color: var(--white);
 }
 
 .submit {
     width: 100%;
     padding: 10px 0;
     border-radius: 20px;
-    text-transform:uppercase
+    text-transform:uppercase;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
 }
 
-.thankyou-page {
+button:hover {
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    transition-duration: 0.25s;
+}
+
+.thankyou-container {
     height: inherit;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
 .content-thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 40px 30px;
+}
+
+#selection-info {
+    background-color:  var(--dark-blue);
+    color: var(--orange);
+    padding: 7px 20px;
+    border-radius: 20px;
+    margin: 30px  010px 0;
+    
 }
 
 /*
